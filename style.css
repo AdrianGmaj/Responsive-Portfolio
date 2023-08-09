@@ -431,6 +431,159 @@ section#services {
   text-transform: uppercase;
 }
 
+
+/* skills section */
+section#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: calc(1rem +2vw);
+  background-color: var(--tertiary-color);
+}
+
+
+.skills__design,
+.skills__coding {
+  padding: calc(1rem + 2vw);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+  flex-basis: 40rem;
+}
+
+.skills__design--title,
+.skills__coding--title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  color: white;
+}
+
+.skills__design-progress,
+.skills__coding-progress {
+  position: relative;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.skills__design-progress span,
+.skills__coding-progress span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+  
+
+}
+
+.skills__coding--progress__1 {
+  animation: coding-1 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-1 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+.skills__coding--progress__2 {
+  animation: coding-2 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-2 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 60%;
+  }
+}.skills__coding--progress__3 {
+  animation: coding-3 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-3 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+  }
+}
+.skills__coding--progress__4 {
+  animation: coding-4 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-4 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 55%;
+  }
+}
+.skills__design--progress__1 {
+  animation: design-1 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-1 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+  }
+}
+.skills__design--progress__2 {
+  animation: design-2 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-2 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%;
+  }
+}.skills__design--progress__3 {
+  animation: design-3 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-3 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 60%;
+  }
+}
+.skills__design--progress__4 {
+  animation: design-1 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-4 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+
 /* (max width 900px) */
 @media screen and (max-width: 900px) {
 
@@ -448,11 +601,13 @@ section#services {
     margin: 0 0 calc(1rem + 2vw)
   }
 
-  .services--title{
+  .services--title,
+  .skills__design--title,
+  .skills__coding--title {
     font-size: calc(1.6rem + 2vw)
   }
 
-  .services--para{
+  .services--para {
     font-size: calc(0.8rem + 1.5vw);
   }
 }
